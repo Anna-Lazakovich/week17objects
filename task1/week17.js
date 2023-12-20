@@ -23,15 +23,15 @@ class Worker1 {
 		this.surname = surname;
 	}
 
-	fullName() {
-		return (`${this.surname} ${this.name}`);
+	getfullName() {
+		return `${this.surname} ${this.name}`;
 	}
 }
 
 //Создаём объект worker2 на основе класса Worker
 const worker2 = new Worker1('Имя', 'Фамилия');
 //Выводим полное имя объекта worker2 в консоль с помощью метода fullName
-console.log(worker2.fullName());
+console.log(worker2.fullName);
 
 //Задание 3
 //Создайте класс Car. Класс должен содержать свойства brand, model и year. Создайте на его основе объект car и выведите его свойства в консоль.
@@ -59,7 +59,7 @@ class Car1 {
 		this.year = year;
 	}
 
-	getAge() {
+	get Age() {
 		return (new Date().getFullYear() - this.year);
 	}
 }
@@ -67,7 +67,7 @@ class Car1 {
 //Создаём объект car2 на основе класса Car
 const car2 = new Car1('Brand', 'Model', 2010);
 //Выводим возраст объекта car2 в консоль с помощью метода getAge
-console.log(car2.getAge());
+console.log(car2.Age);
 
 //Задание 5
 //Создайте класс Rectangle. Класс должен содержать свойства width и height. Создайте на его основе объект rectangle и выведите его свойства в консоль.
